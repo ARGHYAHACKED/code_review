@@ -21,7 +21,7 @@ function App() {
     try {
       setLoading(true);
       setError("");
-      const response = await axios.post("http://localhost:3000/ai/get-review", { 
+      const response = await axios.post("https://code-review-jj31.onrender.com/ai/get-review", { 
         code: editorRef.current.getValue() 
       });
       setReview(response.data);
